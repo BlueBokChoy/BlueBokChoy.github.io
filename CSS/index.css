@@ -10,8 +10,9 @@
 }
 
 @keyframes testing {
-    0%   {left: 20px;background-color: red;}
-    25%  {left: 40px;background-color: yellow;}
-    50%  {left: 20px;background-color: blue;}
-    100% {left: 0px;background-color: green;}
+    0%   {left: 0px;top: 50px;background-color: red;}
+    25%  {left: 200px;top: 50px;background-color: yellow;}
+    50%  {left: 400px;top: 50px;background-color: blue;}
+    75%  {left: 200px;top: 50px;background-color: red;}
+    100% {left: 0px;top: 50px;background-color: green;}
 }
