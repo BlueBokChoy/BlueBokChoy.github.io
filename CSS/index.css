@@ -4,4 +4,14 @@
 	font-weight: 500;
 	font-size: 8vw;
 	margin-bottom: 5vh;
+    animation-name: testing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testing {
+    0%   {left: 20px;background-color: red;}
+    25%  {left: 40px;background-color: yellow;}
+    50%  {left: 20px;background-color: blue;}
+    100% {left: 0px;background-color: green;}
 }
