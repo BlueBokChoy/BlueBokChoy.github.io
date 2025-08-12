@@ -5,7 +5,7 @@
 /* Navigation functions */
 	
 	function home() {
-		location.href = "Index.html";
+		location.href = "index.html";
 	}
 	
 	function aboutme() {
