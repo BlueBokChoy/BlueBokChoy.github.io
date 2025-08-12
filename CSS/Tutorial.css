@@ -370,45 +370,6 @@ input[type="radio"]:checked {
 	cursor: pointer;
 }
 
-/* Loading */
-#loading {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	/* Need fix*/
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background-color: #A1CF6B;
-	transition: 0.5s ease;
-	overflow: hidden;
-}
-
-#loadingwheel {
-	margin: 3vh;
-	width: 20vh;
-	height: 20vh;
-	border-radius: 100%;
-	border-left: white solid 2vh;
-	border-top: #A1CF6B solid 2vh;
-	border-bottom: #A1CF6B solid 2vh;
-	border-right: white solid 2vh;
-	animation: loading 3s infinite;
-}
-
-
-@keyframes loading {
-	0% {
-		transform: rotate(0deg)
-	}
-
-	100% {
-		transform: rotate(180deg)
-	}
-}
-
-
 /* Generic Styles */
 .bluetxtstyle {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

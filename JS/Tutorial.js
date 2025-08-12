@@ -13,11 +13,6 @@ function openmenu() {
 	}
 }
 
-/* Loading screen */
-window.onload = setTimeout(() => {
-	document.getElementById("loading").style.width = "0";
-}, 0) //change to 6000
-
 /* Open and close quiz */
 function quizopen() {
 	document.getElementById("quizdiv").style.height = "80%"
