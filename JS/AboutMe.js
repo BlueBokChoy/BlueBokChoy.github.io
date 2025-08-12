@@ -41,7 +41,7 @@ function exitgoals() {
 }
 
 function resume() {
-	const pdfUrl = './Resume 2.pdf';
+	const pdfUrl = './Resume2.pdf';
 	window.open(pdfUrl, '_blank');
 }
 
