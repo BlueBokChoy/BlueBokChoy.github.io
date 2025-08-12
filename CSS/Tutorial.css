@@ -275,7 +275,7 @@ input[type="radio"]:checked {
 }
 
 .successanimation {
-	animation: success 3s;
+	animation: success 2s;
 }
 
 @keyframes success {

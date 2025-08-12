@@ -33,25 +33,25 @@ function answer() {
 		document.getElementById("question1").style.color = "#A1CF6B";
 	}
 	else {
-		document.getElementById("question1").style.color = "red";
+		document.getElementById("question1").style.color = "#FF0000";
 	}
 	if (document.getElementById("q2opt3").checked == true) {
 		document.getElementById("question2").style.color = "#A1CF6B";
 	}
 	else {
-		document.getElementById("question2").style.color = "red";
+		document.getElementById("question2").style.color = "#FF0000";
 	}
 	if (document.getElementById("q3opt1").checked == true) {
 		document.getElementById("question3").style.color = "#A1CF6B";
 	}
 	else {
-		document.getElementById("question3").style.color = "red";
+		document.getElementById("question3").style.color = "#FF0000";
 	}
 	if (document.getElementById("q4opt2").checked == true) {
 		document.getElementById("question4").style.color = "#A1CF6B";
 	}
 	else {
-		document.getElementById("question4").style.color = "red";
+		document.getElementById("question4").style.color = "#FF0000";
 	}
 	if (document.getElementById("q1opt2").checked == true && document.getElementById("q2opt3").checked == true && document.getElementById("q3opt1").checked == true && document.getElementById("q4opt2").checked == true) {
 		document.getElementById("SuccessAnimation").classList.add("successanimation");
@@ -62,10 +62,11 @@ function answer() {
 
 /* Hints */
 
+/* THIS IS AN UNADDED FEATURE
 let btnpresses = 0
 document.getElementById("check").onclick = function count() {
 	btnpresses++
-}
+}*/
 
 /*
 if (btnpresses = 5) {

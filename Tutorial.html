@@ -110,44 +110,52 @@
 					<h2 class="subtitleblack">Quiz</h2>
 					<div id="quiztext">
 						<div id="question1" class="question">
-							<p>Question 1</p>
+							<!-- Question 1 -->
 							<p>What is the 5th stage of grief?</p>
-							<input type="radio" name="q1" id="q1opt1">Cookies</input>
-							<input type="radio" name="q1" id="q1opt2">Acceptance</input>
-							<input type="radio" name="q1" id="q1opt3">Depression</input>
+							<input type="radio" name="q1" id="q1opt1" value="cookies">
+							<label for="q1opt1">Cookies</label>
+							<input type="radio" name="q1" id="q1opt2" value="acceptance">
+							<label for="q1opt2">Acceptance</label>
+							<input type="radio" name="q1" id="q1opt3" value="depression">
+							<label for="q1opt3">Depression</label>
+
 						</div>
 						<div id="question2" class="question">
-							<p>Question 2</p>
-							<p>How much money do you need for a ICBM</p>
-							<input type="radio" name="q2" id="q2opt1">17 Billion</input>
-							<input type="radio" name="q2" id="q2opt2">9 Million</input>
-							<input type="radio" name="q2" id="q2opt3">116 Million</input>
+							<!-- Question 2 -->
+							<p>How much money do you need for an ICBM?</p>
+							<input type="radio" name="q2" id="q2opt1" value="17billion">
+							<label for="q2opt1">17 Billion</label>
+							<input type="radio" name="q2" id="q2opt2" value="9million">
+							<label for="q2opt2">9 Million</label>
+							<input type="radio" name="q2" id="q2opt3" value="116million">
+							<label for="q2opt3">116 Million</label>
 						</div>
 						<div id="question3" class="question">
+							<!-- Question 3 -->
 							<p>Question 3</p>
 							<p>He who can conquer the washroom...</p>
-							<input type="radio" name="q3" id="q3opt1"></input>
+							<input type="radio" name="q3" id="q3opt1">
 							<label for="q3opt1">May walk free</label>
-							<input type="radio" name="q3" id="q3opt2"></input>
+							<input type="radio" name="q3" id="q3opt2">
 							<label for="q3opt2">Cookie!</label>
-							<input type="radio" name="q3" id="q3opt3"></input>
+							<input type="radio" name="q3" id="q3opt3">
 							<label for="q3opt3">I want a cookie</label>
 						</div>
 						<div id="question4" class="question">
+							<!-- Question 4 -->
 							<p>Question 4</p>
 							<p>Should you believe the root of all problems?</p>
-							<input type="radio" name="q4" id="q4opt1"></input>
+							<input type="radio" name="q4" id="q4opt1">
 							<label for="q4opt1">Absolutely</label>
-							<input type="radio" name="q4" id="q4opt2"></input>
+							<input type="radio" name="q4" id="q4opt2">
 							<label for="q4opt2">Never</label>
-							<input type="radio" name="q4" id="q4opt3"></input>
+							<input type="radio" name="q4" id="q4opt3">
 							<label for="q4opt3">Mayhaps</label>
 						</div>
 						<button type="button" class="whitetxtstyle" id="check" onclick="answer()">Check!</button>
 					</div>
 				</form>
 				<button type="button" class="exit" onclick="exitquiz()">X</button>
-				<div id="hint" class="whitetxtstyle">Hello</div>
 			</div>
 			<div id="SuccessAnimation" class="subtitlewhite">
 				Congrats, you've escaped MMHS!
@@ -157,8 +165,8 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="JS/Tutorial.js"></script>
-	<script src="JS/Navigation.js"></script>
+	<script src="./JS/Tutorial.js"></script>
+	<script src="./JS/Navigation.js"></script>
 
 </body>
 
