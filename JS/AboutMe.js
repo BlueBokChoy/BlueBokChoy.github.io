@@ -40,26 +40,19 @@ function exitgoals() {
 	document.getElementById("goalsinfo").style.padding = "0";
 }
 
-function hobby() {
-	document.getElementById("hobbyinfo").style.height = "64%"
-	document.getElementById("hobbyinfo").style.width = "64%";
-	document.getElementById("hobbyinfo").style.padding = "3%";
+function resume() {
+	const pdfUrl = './Resume 2.pdf';
+	window.open(pdfUrl, '_blank');
 }
 
-function exithobby() {
-	document.getElementById("hobbyinfo").style.width = "0";
-	document.getElementById("hobbyinfo").style.height = "0";
-	document.getElementById("hobbyinfo").style.padding = "0";
+function skills() {
+	document.getElementById("skillsinfo").style.height = "64%";
+	document.getElementById("skillsinfo").style.width = "64%";
+	document.getElementById("skillsinfo").style.padding = "3%";
 }
 
-function personality() {
-	document.getElementById("personalityinfo").style.height = "64%"
-	document.getElementById("personalityinfo").style.width = "64%";
-	document.getElementById("personalityinfo").style.padding = "3%";
-}
-
-function exitpersonality() {
-	document.getElementById("personalityinfo").style.width = "0";
-	document.getElementById("personalityinfo").style.height = "0";
-	document.getElementById("personalityinfo").style.padding = "0";
+function exitskills() {
+	document.getElementById("skillsinfo").style.width = "0";
+	document.getElementById("skillsinfo").style.height = "0";
+	document.getElementById("skillsinfo").style.padding = "0";
 }
