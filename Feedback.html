@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Welcome</title>
-	<link rel="stylesheet" type="text/css" href="CSS/Index.css">
+	<title>Feedback</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Feedback.css">
 </head>
 
 <body>
@@ -25,20 +25,20 @@
 				<button type="button" id="Contact" class="menuoptbtn" onclick="feedback()">Feedback</button>
 			</div>
 		</div>
-		<!-- Text -->
-		<div id="text">
-			<h4 id="title">Roy Chen</h4>
-			<p id="subtitle">Welcome to my portfolio!</p>
+		<div id="top">
+			<h4 id="title">Feedback</h4>
 		</div>
-		<div id="slideshow">
-			<img src="Images/Cooperation.jpeg" id="ssimgs">
-		</div>
+		<form id="bottom">
+			<textarea class="whitetxtstyle" id="feedback"></textarea>
+			<button class="whitetxtstyle" type="button" id="submitfeedback" onclick="back()">Submit</button>
+		</form>
 	</div>
 
 
 	<!-- Scripts -->
-	<script src="JS/Index.js"></script>
+	<script src="JS/Feedback.js"></script>
 	<script src="JS/Navigation.js"></script>
+
 </body>
 
 </html>

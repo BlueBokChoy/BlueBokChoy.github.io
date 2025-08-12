@@ -1,0 +1,382 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #A1CF6B;
+	margin: 0px;
+}
+
+/* Main body */
+#mainbody {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+
+/* Menu */
+#menu {
+	background-color: inherit;
+	position: absolute;
+	left: 5vh;
+	top: 5vh;
+}
+
+/* Menu Button */
+
+/* Menu Hamburger */
+#menuhamburger {
+	border: none;
+	background-color: inherit;
+	transition: 0.5s ease;
+	display: flex;
+	height: 3vw;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* Hamburger bar lines */ /* Consider merging if possible */
+#topbar {
+	background-color: #E87461;
+	border: none;
+	transition: 0.5s ease;
+	width: 2vw;
+	margin: 0;
+	text-align: left;
+	padding: 0.2vw;
+	border-radius: 0.3vh;
+}
+
+#midbar {
+	background-color: #E87461;
+	border: none;
+	padding: 0.2vw;
+	margin: 0;
+	transition: 0.5s ease;
+	width: 2vw;
+	border-radius: 0.3vh;
+}
+
+#bottombar {
+	background-color: #E87461;
+	border: none;
+	margin: 0;
+	padding: 0.2vw;
+	transition: 0.5s ease;
+	width: 2vw;
+	border-radius: 0.3vh;
+	padding: 0.2vw;
+}
+
+#menuhamburger:hover {
+	opacity: 80%;
+	cursor: pointer;
+}
+
+/* Menu Options */
+#menuopt {
+	background-color: #1A1F16;
+	position: absolute;
+	border-radius: 1vh;
+	transition: 0.5s ease;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	white-space: nowrap;
+}
+
+/* Menu Options Button */
+.menuoptbtn {
+	border: none;
+	transition: 0.5s ease;
+	padding: 0.5vw;
+	background-color: inherit;
+	display: flex;
+	align-items: center;
+	margin-top: 3vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-left: 0.3vw solid white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #E8E1EF;
+	font-weight: 500;
+	font-size: 1vw;
+	border-radius: 1vh;
+}
+
+.menuoptbtn:hover {
+	background-color: #080907;
+}
+
+/* Main body */
+
+/* Left Side */
+#leftside {
+	display: flex;
+	flex-direction: column;
+	width: 44%;
+	background-color: white;
+	padding: 3%;
+}
+
+#title {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #A1CF6B;
+	font-weight: 500;
+	font-size: 8vw;
+	margin-bottom: 5vh;
+	border-bottom: 1vh solid #A1CF6B;
+}
+
+/* Right Side */
+#rightside {
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+/* More info */
+#moreinfo {
+	margin-top: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 40%;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2vh;
+}
+
+#career, #goals, #hobbies, #personality {
+	flex-basis: 45%;
+	height: 50%;
+	margin: 0.5vw;
+	background-color: inherit;
+	border: none;
+	transition: 0.5s ease;
+}
+
+#career:hover, #goals:hover, #hobbies:hover, #personality:hover {
+	transform: translateY(-0.5vh);
+}
+
+.moreinfoimg {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 2vh;
+}
+
+/* Career */ /*more names*/
+#careerinfo {
+	position: absolute;
+	background-color: #50B9C7;
+	width: 0;
+	height: 0;
+	right: 15vw;
+	bottom: 15vh;
+	border-radius: 1vh;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+/* Career text */
+#careertxt {
+	margin-top: 5vh;
+	width: 50%;	
+}
+
+/* Career Image */
+#careerimgdiv {
+	width: 40%;
+	margin-left: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#careerimg {
+	object-fit: cover;
+	width: 100%;	
+}
+
+/* Goals */ /*more names*/
+#goalsinfo {
+	position: absolute;
+	background-color: #88E62A;
+	width: 0;
+	height: 0;
+	right: 15vw;
+	bottom: 15vh;
+	border-radius: 1vh;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+/* Goals text */
+#goalstxt {
+	margin-top: 5vh;
+	width: 50%;	
+}
+
+/* Goals Image */
+#goalsimgdiv {
+	width: 40%;
+	margin-left: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#goalsimg {
+	object-fit: cover;
+	width: 100%;	
+}
+
+/* Hobbies */ /*more names*/
+#hobbyinfo {
+	position: absolute;
+	background-color: #F4A233;
+	width: 0;
+	height: 0;
+	right: 15vw;
+	bottom: 15vh;
+	border-radius: 1vh;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+/* Hobbies text */
+#hobbytxt {
+	margin-top: 5vh;
+	width: 50%;	
+}
+
+/* Hobbies Image */
+#hobbyimgdiv {
+	width: 40%;
+	margin-left: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hobbyimg {
+	object-fit: cover;
+	width: 100%;	
+}
+
+/* Personality */ /*more names*/
+#personalityinfo {
+	position: absolute;
+	background-color: #9F33F4 ;
+	width: 0;
+	height: 0;
+	right: 15vw;
+	bottom: 15vh;
+	border-radius: 1vh;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+/* Personality text */
+#personalitytxt {
+	margin-top: 5vh;
+	width: 50%;	
+}
+
+/* Personality Image */
+#personalityimgdiv {
+	width: 40%;
+	margin-left: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#personalityimg {
+	object-fit: cover;
+	width: 100%;	
+}
+
+
+/* Exit button */
+.exit {
+	position: absolute;
+	background-color: #E87461;
+	border-radius: 2vh;
+	width: 3vw;
+	border: none;
+	height: 3vw;
+	text-align: center;
+	left: 64vw;
+	top: 2vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-weight: 500;
+	font-size: 2vw;
+}
+
+.exit:hover {
+	opacity: 80%;
+	cursor: pointer;
+}
+
+/* Generic Styles */
+.bluetxtstyle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #5CA4A9;
+	font-weight: 500;
+	font-size: 1vw;
+}
+
+.greentxtstyle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #A1CF6B;
+	font-weight: 500;
+	font-size: 1vw;
+}
+
+.whitetxtstyle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-weight: 500;
+	font-size: 1vw;
+}
+
+.blacktxtstyle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	font-weight: 500;
+	font-size: 1vw;
+}
+
+.subtitleblack {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	font-weight: 500;
+	margin: 0;
+	font-size: 2vw;
+}
+
+.subtitlewhite {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-weight: 500;
+	margin: 0;
+	font-size: 2vw;
+}

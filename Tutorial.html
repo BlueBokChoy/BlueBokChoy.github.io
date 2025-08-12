@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Sample</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Tutorial.css">
+</head>
+
+<body>
+	<div id="mainbody">
+		<!-- Menu -->
+		<div id="menu">
+			<button type="button" id="menuhamburger" onclick="openmenu()">
+				<hr id="topbar">
+				<hr id="midbar">
+				<hr id="bottombar">
+			</button>
+			<div id="menuopt">
+				<button type="button" id="home" class="menuoptbtn" onclick="home()">
+					Home</button>
+				<button type="button" id="aboutme" class="menuoptbtn" onclick="aboutme()">About Me</button>
+				<button type="button" id="sampleproject" class="menuoptbtn" onclick="sampleproject()">Sample
+					Project</button>
+				<button type="button" id="Contact" class="menuoptbtn" onclick="feedback()">Feedback</button>
+			</div>
+		</div>
+		<!-- Blog -->
+		<div id="blogbody">
+			<h3 id="title">5 Simple Tricks to Escape MMHS!</h3>
+			<img class="img" src="Images/MMHS.jpg">
+			<div id="authorinfo">
+				<img id="pfp" src="Images/Placeholder.webp">
+				<div id="name" class="blacktxtstyle">
+					Lorem Ipsum <br> Advanced Procrastinator
+				</div>
+			</div>
+			<div id="blogtxt">
+				<p class="blacktxtstyle">Are you craving the next door Mcdonalds? Or is the good ol' textbook
+					feeling kinda meh? Well it seems like a great time to do some shenanigans. </p>
+				<p class="blacktxtstyle">In this post, I'll share some of the tried and true methods for getting out of
+					here.</p>
+				<h4 class="subtitleblack">Tip 1: Lmao, you can't</h4>
+				<p class="blacktxtstyle">You're stuck here and there's no escape. Experts say that the last stage to
+					grief is acceptance, better accept that fact now... Besides, the vending machines here aren't that
+					bad,
+					right?</p>
+				<h4 class="subtitleblack">Tip 2: Pay 4000 Dollars for the "touch grass" DLC</h4>
+				<p class="blacktxtstyle">A very popular option among the gaming base of MMHS is to buy the new expansion
+					packs and DLC for MMHS. It's a very effective option, however it only provides a free pass for 2
+					hours.</p>
+				<p class="blacktxtstyle">The outer bounds of MMHS is now available for purchase in the newly release DLC
+					for 4000 smackeroos available now on the EA store (Ecentric Acorns). However we suggest that you
+					wait
+					into the Krazy Sale coming soon to purchase your copy at a discount.</p>
+				<img class="img" src="Images/DLCs.png">
+				<p class="blacktxtstyle">For a limited time as well, EA is introducing a in-game event skin. For those
+					who buy the latest DLC, they get a copy of the clowns skin set and some horse armor (for the kicks I
+					guess?). What a steal!</p>
+				<h4 class="subtitleblack">Tip 3: Intercontinental Ballistic Missiles (ICBM) </h4>
+				<p class="blacktxtstyle">ICBMs are one of the easiest methods that we're going to be discussing here.
+					All you need is some advanced rocket science, 118 Millions dollars in the bank, a clear lack of
+					ethics
+					(this ones easy), and some hard work.</p>
+				<p class="blacktxtstyle">Since this method is so easy, I'll just quickly summerise the steps:
+				<ul class="blacktxtstyle">
+					<li>Find 1000Kg of </li>
+					<li>Haha, did you really</li>
+					<li>think I'd tell you how to</li>
+					<li>make a bomb?</li>
+				</ul>
+				</p>
+				<img class="img" src="Images/ICBM.jpg">
+				<p class="blacktxtstyle">Just be warned though, you may violate a few international laws on the way, but
+					why let that ruin some good fun? All you need to do is ignore the guys in black suits outside your
+					door
+					from the "CIA", whatever that is.
+				</p>
+				<h4 class="subtitleblack">Tip 4: Clean the washrooms</h4>
+				<p class="blacktxtstyle">This method is widely regarded as the "freemium" method. Whilst techincally
+					free, do
+					you really want to?</p>
+				<p class="blacktxtstyle">A very famous urban legend that thou who can reign over the washroom of the
+					first floor may leave the school. Of course, many was tried but failed.</p>
+				<p class="blacktxtstyle">Rest assured though that if you don't survive your encounter, your odyssey will
+					still be told among students for generations to come.</p>
+				<img class="img" src="Images/Washrooms.webp">
+				<h4 class="subtitleblack">Tip 5: Confront the root of all problems</h4>
+				<p class="blacktxtstyle">One common problem faced among students trying to escape the confines of this
+					school is the root of all problems. Which has been turning your nice and innocent linear functions
+					into something that barely grows.</p>
+				<p class="blacktxtstyle">Say, we assign problems the variable "x", then the root of all problems we need
+					to address is &#8730;x.</p>
+				<p class="blacktxtstyle">Even worse, if you're feeling negative, you won't be able to confront him at
+					all! He won't even be in the real world. He's a known liar as well, he'll say all your negative
+					problems are imaginary.</p>
+				<img class="img" src="Images/Insanegraph.png">
+				<p class="blacktxtstyle">All in all, he's a terrible guy and I feel sorry for anyone trying to confront
+					him.
+				</p>
+				<h4 class="subtitleblack">Conclusion</h4>
+				<p class="blacktxtstyle">With so many methods of escaping the dull walls of MMHS, you'll never bored
+					again! You can test your knowledge with our free interactive quiz.
+				</p>
+				<button class="whitetxtstyle" type="button" id="quiz" onclick="quizopen()">Quiz Me!</button>
+			</div>
+			<!-- Quiz -->
+			<div id="quizdiv">
+				<form id="quizform">
+					<h2 class="subtitleblack">Quiz</h2>
+					<div id="quiztext">
+						<div id="question1" class="question">
+							<p>Question 1</p>
+							<p>What is the 5th stage of grief?</p>
+							<input type="radio" name="q1" id="q1opt1">Cookies</input>
+							<input type="radio" name="q1" id="q1opt2">Acceptance</input>
+							<input type="radio" name="q1" id="q1opt3">Depression</input>
+						</div>
+						<div id="question2" class="question">
+							<p>Question 2</p>
+							<p>How much money do you need for a ICBM</p>
+							<input type="radio" name="q2" id="q2opt1">17 Billion</input>
+							<input type="radio" name="q2" id="q2opt2">9 Million</input>
+							<input type="radio" name="q2" id="q2opt3">116 Million</input>
+						</div>
+						<div id="question3" class="question">
+							<p>Question 3</p>
+							<p>He who can conquer the washroom...</p>
+							<input type="radio" name="q3" id="q3opt1"></input>
+							<label for="q3opt1">May walk free</label>
+							<input type="radio" name="q3" id="q3opt2"></input>
+							<label for="q3opt2">Cookie!</label>
+							<input type="radio" name="q3" id="q3opt3"></input>
+							<label for="q3opt3">I want a cookie</label>
+						</div>
+						<div id="question4" class="question">
+							<p>Question 4</p>
+							<p>Should you believe the root of all problems?</p>
+							<input type="radio" name="q4" id="q4opt1"></input>
+							<label for="q4opt1">Absolutely</label>
+							<input type="radio" name="q4" id="q4opt2"></input>
+							<label for="q4opt2">Never</label>
+							<input type="radio" name="q4" id="q4opt3"></input>
+							<label for="q4opt3">Mayhaps</label>
+						</div>
+						<button type="button" class="whitetxtstyle" id="check" onclick="answer()">Check!</button>
+					</div>
+				</form>
+				<button type="button" class="exit" onclick="exitquiz()">X</button>
+				<div id="hint" class="whitetxtstyle">Hello</div>
+			</div>
+			<div id="SuccessAnimation" class="subtitlewhite">
+				Congrats, you've escaped MMHS!
+				<button class="whitetxtstyle" type="button" id="feedback" onclick="feedback()">Feedback</button>
+			</div>
+		</div>
+		<!-- Loading -->
+		<div id="loading">
+			<div id="loadingwheel"></div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="JS/Tutorial.js"></script>
+	<script src="JS/Navigation.js"></script>
+
+</body>
+
+</html>

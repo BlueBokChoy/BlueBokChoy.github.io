@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="CSS/AboutMe.css">
+</head>
+
+<body>
+	<div id="mainbody">
+		<!-- Menu -->
+		<div id="menu">
+			<button type="button" id="menuhamburger" onclick="openmenu()">
+				<hr id="topbar">
+				<hr id="midbar">
+				<hr id="bottombar">
+			</button>
+			<div id="menuopt">
+				<button type="button" id="home" class="menuoptbtn" onclick="home()">
+					Home</button>
+				<button type="button" id="aboutme" class="menuoptbtn" onclick="aboutme()">About Me</button>
+				<button type="button" id="sampleproject" class="menuoptbtn" onclick="sampleproject()">Sample
+					Project</button>
+				<button type="button" id="Contact" class="menuoptbtn" onclick="feedback()">Feedback</button>
+			</div>
+		</div>
+		<div id="leftside">
+			<h4 id="title">About Me</h4>
+		</div>
+		<div id="rightside">
+			<!-- Summary -->
+			<h5 class="subtitlewhite">Summary</h5>
+			<p class="whitetxtstyle">Hello! My name is Roy and this is my
+				portfolio. Below here, you can learn about me and the type of person
+				I am, but here's a quick summary of it all.</p>
+			<p class="whitetxtstyle">I'm a person who likes to help others
+				where I can. I'd also like to continue helping others into the
+				future as my dream career is teaching. My bread and butter is my
+				jokes (sometimes hit or miss..), they help me integrate and get to
+				know my peers. I like to socialise where I can so jokes really help
+				break the ice. I'm an avid fan of music too, and I play the trumpet
+				myself. The music I like best is Jpop and Jazz (weird combination
+				but trust me, it's good).</p>
+				<h5 class="subtitlewhite">More info</h5>
+			<div id="moreinfo">
+				<button type="button" id="career" onclick="career()">
+					<img class="moreinfoimg" src="Images/Career.jpg">
+				</button>
+				<button type="button" id="goals" onclick="goals()">
+					<img class="moreinfoimg" src="Images/Goals.jpg">
+				</button>
+				<button type="button" id="hobbies" onclick="hobby()">
+					<img class="moreinfoimg" src="Images/Hobbies.png">
+				</button>
+				<button type="button" id="personality" onclick="personality()">
+					<img class="moreinfoimg" src="Images/Personality.jpg">
+				</button>
+			</div>
+			<!-- Career -->
+			<div id="careerinfo">
+				<div id="careertxt">
+					<h2 class="subtitlewhite">My Career Plans</h2>
+					<p class="whitetxtstyle">For my career, I want to purse teaching and helping others. Although, I'm
+						not sure what I want to teach.</p>
+				</div>
+				<div id="careerimgdiv">
+					<img id="careerimg" src="Images/Placeholder.webp">
+				</div>
+				<button type="button" class="exit" onclick="exitcareer()">
+					X
+				</button>
+			</div>
+			<!-- Goals -->
+			<div id="goalsinfo">
+				<div id="goalstxt">
+					<h2 class="subtitlewhite">My Goals</h2>
+					<p class="whitetxtstyle">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Quisque eget sollicitudin felis.
+						Phasellus imperdiet est sed mauris vestibulum, non venenatis ante
+						ultrices. Integer in metus sit amet turpis iaculis hendrerit eu
+						rhoncus ligula. Donec lorem sapien, porta vel orci vel, rutrum
+						semper mauris. Phasellus quis sollicitudin libero. In hac
+						habitasse platea dictumst. Phasellus porta neque eu dolor
+						sollicitudin, quis euismod turpis eleifend. Mauris egestas
+						ultricies diam, suscipit vestibulum quam pellentesque sed. Proin
+						ut justo fringilla, sollicitudin ex in, fermentum ex. Praesent
+						pulvinar ornare risus, quis scelerisque augue dapibus ac. Nunc
+						vehicula tincidunt quam quis congue. Nulla a consectetur turpis,
+						in fermentum ligula. Phasellus in sapien non magna tristique
+						consectetur in sed quam. Etiam nisi risus, dictum vel mi vitae,
+						tincidunt aliquam justo.</p>
+				</div>
+				<div id="goalsimgdiv">
+					<img id="goalsimg" src="Images/Placeholder.webp">
+				</div>
+				<button type="button" class="exit" onclick="exitgoals()">
+					X
+				</button>
+			</div>
+			<!-- Hobbies -->
+			<div id="hobbyinfo">
+				<div id="hobbytxt">
+					<h2 class="subtitlewhite">My Hobbies</h2>
+					<p class="whitetxtstyle">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Quisque eget sollicitudin felis.
+						Phasellus imperdiet est sed mauris vestibulum, non venenatis ante
+						ultrices. Integer in metus sit amet turpis iaculis hendrerit eu
+						rhoncus ligula. Donec lorem sapien, porta vel orci vel, rutrum
+						semper mauris. Phasellus quis sollicitudin libero. In hac
+						habitasse platea dictumst. Phasellus porta neque eu dolor
+						sollicitudin, quis euismod turpis eleifend. Mauris egestas
+						ultricies diam, suscipit vestibulum quam pellentesque sed. Proin
+						ut justo fringilla, sollicitudin ex in, fermentum ex. Praesent
+						pulvinar ornare risus, quis scelerisque augue dapibus ac. Nunc
+						vehicula tincidunt quam quis congue. Nulla a consectetur turpis,
+						in fermentum ligula. Phasellus in sapien non magna tristique
+						consectetur in sed quam. Etiam nisi risus, dictum vel mi vitae,
+						tincidunt aliquam justo.</p>
+				</div>
+				<div id="hobbyimgdiv">
+					<img id="hobbyimg" src="Images/Placeholder.webp">
+				</div>
+				<button type="button" class="exit" onclick="exithobby()">
+					X
+				</button>
+			</div>
+			<!-- Personality -->
+			<div id="personalityinfo">
+				<div id="personalitytxt">
+					<h2 class="subtitlewhite">My Personality</h2>
+					<p class="whitetxtstyle">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Quisque eget sollicitudin felis.
+						Phasellus imperdiet est sed mauris vestibulum, non venenatis ante
+						ultrices. Integer in metus sit amet turpis iaculis hendrerit eu
+						rhoncus ligula. Donec lorem sapien, porta vel orci vel, rutrum
+						semper mauris. Phasellus quis sollicitudin libero. In hac
+						habitasse platea dictumst. Phasellus porta neque eu dolor
+						sollicitudin, quis euismod turpis eleifend. Mauris egestas
+						ultricies diam, suscipit vestibulum quam pellentesque sed. Proin
+						ut justo fringilla, sollicitudin ex in, fermentum ex. Praesent
+						pulvinar ornare risus, quis scelerisque augue dapibus ac. Nunc
+						vehicula tincidunt quam quis congue. Nulla a consectetur turpis,
+						in fermentum ligula. Phasellus in sapien non magna tristique
+						consectetur in sed quam. Etiam nisi risus, dictum vel mi vitae,
+						tincidunt aliquam justo.</p>
+				</div>
+				<div id="personalityimgdiv">
+					<img id="personalityimg" src="Images/Placeholder.webp">
+				</div>
+				<button type="button" class="exit" onclick="exitpersonality()">
+					X
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="JS/AboutMe.js"></script>
+	<script src="JS/Navigation.js"></script>
+</body>
+
+</html>

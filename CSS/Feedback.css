@@ -34,6 +34,8 @@ body {
 }
 
 /* Hamburger bar lines */
+
+/* Consider merging if possible */
 #topbar {
 	background-color: #E87461;
 	border: none;
@@ -58,7 +60,8 @@ body {
 #bottombar {
 	background-color: #E87461;
 	border: none;
-	margin: 0; padding : 0.2vw;
+	margin: 0;
+	padding: 0.2vw;
 	transition: 0.5s ease;
 	width: 2vw;
 	border-radius: 0.3vh;
@@ -108,55 +111,98 @@ body {
 	background-color: #080907;
 }
 
-/* Content */
-#content {
-	flex-grow: 4;
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	padding-left: 5vw;
-}
-
-/* text */
-#text {
-	font-weight: 700;
+/* Main body */
+#mainbody {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	width: 40%;
-	padding-left: 5vh;
-	flex-wrap: wrap;
+}
+
+/* Upper half */
+#top {
+	width: 100vw;
+	height: 50vh;
+	background-color: white;
 }
 
 #title {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
+	color: #A1CF6B;
 	font-weight: 500;
 	font-size: 8vw;
 	margin-bottom: 5vh;
+	margin-left: 2vw;
 }
 
-#subtitle {
-	margin: 0; font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-	font-weight: 500;
-	font-size: 3vw;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Bottom half */
+#bottom {
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-/* Image slide show NEEDS TO BE DONE*/
-#slideshow {
-	width: 60%;
+/* Feedback */
+#feedback {
+	width: 50%;
+	height: 50%;
+	resize: none;
+	border: 0.5vh solid white;
+	background: inherit;
+	outline: none;
+	border-radius: 2vh;
+	transition: 0.5s ease;
+	padding: 1vw;
 	overflow: hidden;
 }
 
-#ssimgs {
-	object-fit: fill;
-	height: 100%;
-	border-left: 5vw solid #7AC74F;
-	border-top-left-radius: 100%;
-	border-bottom-left-radius: 100%;
+#submitfeedback {
+	width: 10%;
+	height: 10%;
+	border: none;
+	border-radius: 1vh;
 	transition: 0.5s ease;
+	background-color: #1A1F16;
+}
+
+#submitfeedback:hover {
+	background-color: white;
+	color: #1A1F16;
+}
+
+.submitanimation {
+	animation: txtboxanimation 5s normal;
+}
+
+@keyframes txtboxanimation {
+	30% {
+		width: 0;
+	}
+
+	40% {
+		padding: 0;
+	}
+
+	45% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		background-color: white;
+	}
+
+	55% {
+		transform: rotateY(360deg);
+	}
+
+	80% {
+		padding: 1vw;
+	}
+
+	100% {
+		width: 50%;
+	}
 }
 
 /* Generic Styles */
@@ -179,4 +225,12 @@ body {
 	color: white;
 	font-weight: 500;
 	font-size: 1vw;
+}
+
+.subtitle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-weight: 500;
+	margin: 0;
+	font-size: 2vw;
 }
