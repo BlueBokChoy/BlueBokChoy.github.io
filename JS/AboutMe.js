@@ -39,7 +39,7 @@ function exitgoals() {
 }
 
 function resume() {
-	const pdfUrl = './PDF/Resume2.pdf';
+	const pdfUrl = './PDF/Ruoheng Chen Resume.pdf';
 	window.open(pdfUrl, '_blank');
 }
 
