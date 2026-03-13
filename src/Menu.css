@@ -1,0 +1,72 @@
+#menu {
+    position: sticky;
+    height: 100vh;
+    width: 25vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Hamburger */
+#icon {
+    position: absolute;
+    z-index: 2;
+    padding: 3em;
+}
+
+#icon:hover .bar {
+    background-color: #A1C6EA;
+}
+
+.bar {
+    background-color: #BBD1EA;
+    transition: background-color 0.5s ease-in-out;
+    width: 2rem;
+    height: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+#icon:hover {
+  border-color: transparent;
+}
+#icon:focus,
+#icon:focus-visible {
+  outline: none;
+}
+
+/*Menu Content*/
+#menuBubble {
+    position: absolute;
+    z-index: 1;
+    width: 25vw;
+    height: 100vh;
+    background-color: #BBD1EA;
+    border-bottom-right-radius: 10%;
+}
+
+#menuList {
+    position: absolute;
+    top: 25vh;
+    left: 3vw;
+    width: 18vw;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.menuItem {
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 1vw;
+    border-bottom: 0.1vh white solid;
+    color: white;
+    transition: color 0.4s ease-in-out;
+    transition: border-bottom 0.4s ease-in-out;
+}
+
+.menuItem:hover {
+    color: #507DBC;
+    border-bottom: 0.1vh #507DBC solid;
+    cursor: pointer;
+}
