@@ -1,0 +1,32 @@
+.widget {
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:2rem;
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.08);
+
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+
+    overflow:hidden;
+
+}
+
+
+.widget:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.15);
+
+}

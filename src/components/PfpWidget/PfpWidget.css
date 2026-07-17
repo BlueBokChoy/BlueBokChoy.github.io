@@ -1,0 +1,42 @@
+.pfp-widget {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1.5rem;
+
+    width:420px;
+
+}
+
+
+.pfp-image {
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+.pfp-info h2 {
+
+    margin:0;
+
+    color:#111827;
+
+}
+
+
+.pfp-info p {
+
+    margin:.3rem 0 0;
+
+    color:#64748B;
+
+}

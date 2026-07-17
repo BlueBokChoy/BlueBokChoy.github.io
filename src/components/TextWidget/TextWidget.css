@@ -1,0 +1,27 @@
+.text-widget {
+
+    max-width:420px;
+
+}
+
+
+.text-widget h2 {
+
+    margin:0 0 1rem;
+
+    color:#111827;
+
+    font-size:2rem;
+
+}
+
+
+.text-widget p {
+
+    margin:0;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
