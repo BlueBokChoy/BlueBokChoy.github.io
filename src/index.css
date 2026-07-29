@@ -1,10 +1,27 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* ==========================
+     Fonts - Update later
+     ========================== */
 
+  font-family: "Brandon Grotesque", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+
+
+  /* ==========================
+     Theme Colors - Update later
+     ========================== */
+
+  /* Main text color */
   color: #04080F;
-  background-color: #FFFFFF;
+
+  /* Page background */
+  background-color: #6078A8;
+
+
+  /* ==========================
+     Rendering Defaults
+     ========================== */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,19 +29,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* ==========================
+   Global Layout
+   ========================== */
+
 html,
 body,
 #root {
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  padding: 5px;
+  padding: 0;
 }
+
+
+/* ==========================
+   Global Box Model
+   ========================== */
 
 * {
   box-sizing: border-box;
 }
 
+
+/* ==========================
+   Links - Update later
+   ========================== */
+
+/*
 a {
   font-weight: 500;
   color: #04080F;
@@ -34,6 +67,12 @@ a {
 a:hover {
   color: #535bf2;
 }
+*/
+
+
+/* ==========================
+   Typography Reset
+   ========================== */
 
 h1,
 h2,
@@ -42,23 +81,6 @@ p {
   margin: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.big-text {
+    font-size: 5rem;
 }
