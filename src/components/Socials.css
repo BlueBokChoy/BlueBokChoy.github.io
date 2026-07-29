@@ -1,11 +1,158 @@
 #layout-socials {
-    width: 100%;
-    height: 80vh;
+    min-height: 80vh;
+
     display: flex;
-    flex-direction: column;   
-    justify-content: flex-start;
-    align-items: flex-end;    
-    gap: 5rem;
-    text-align: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding: 5rem;
+
+    color: white;
+}
+
+.socials-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.socials-header h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.social-card {
+    width: min(700px, 100%);
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 24px;
+
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    opacity: .8;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255,255,255,.15);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.button-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    background-color: #2B2B2B;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 0.9rem 1.4rem;
+
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.button-contact svg {
+    font-size: 1.2rem;
+}
+
+.button-contact:hover {
+    background-color: #3A3A3A;
+}
+
+/* Custom alert! */
+
+.custom-alert {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 320px;
+    padding: 14px 18px;
+
+    background: white;
+    color: #6078A8;
+
+    border: 2px solid #6078A8;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    animation: alert-slide 0.25s ease-out;
+}
+
+.custom-alert button {
+    background: #6078A8;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 7px 14px;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.custom-alert button:hover {
+    opacity: 0.85;
+}
+
+@keyframes alert-slide {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }

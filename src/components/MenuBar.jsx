@@ -4,7 +4,7 @@ export default function MenuBar() {
 
     const resumePath = "Ruoheng Chen Resume.pdf"; 
 
-    const menuItems = ["Home", "Career", "Certs", "Resume", "Socials"];
+    const menuItems = ["Home", "Career", "Resume", "Socials"];
 
     const sectionMap = {
         Home: "layout-hero",
