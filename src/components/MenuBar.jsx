@@ -29,7 +29,7 @@ export default function MenuBar() {
     return (
         <div id="bar">
             <img
-                src="/src/images/logo.svg"
+                src="\images\logo.svg"
                 alt="Initials"
                 id="initials"
             />
