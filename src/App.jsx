@@ -15,9 +15,6 @@ export default function App(){
                 <Hero />
                 <Career />
                 <Socials />
-                <Hero />
-                <Hero />
-                <Hero />
             </main>
         </>
     );
