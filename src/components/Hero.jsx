@@ -15,7 +15,7 @@ export default function Hero() {
 
     return (
         <section id="layout-hero">
-            <img src="src\images\roypfp.png" alt="Me" id="pfp"></img>     
+            <img src="/images/roypfp.png" alt="Me" id="pfp"></img>     
             <div id="about-me">
                 <h1 className="big-text">RUOHENG CHEN</h1>
                 <h2>Student, Programmer, Geographer</h2>
